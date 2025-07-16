@@ -1,0 +1,2510 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2025.07.13 11:42:28 =~=~=~=~=~=~=~=~=~=~=~=
+
+[root@control-node ~]# ansible localhost -m setupansible localhost -m setup
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+            "192.168.206.141"
+        ],
+        "ansible_all_ipv6_addresses": [
+            "fe80::20c:29ff:fe80:b5e6"
+        ],
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "11/12/2020",
+        "ansible_bios_vendor": "Phoenix Technologies LTD",
+        "ansible_bios_version": "6.00",
+        "ansible_board_asset_tag": "NA",
+        "ansible_board_name": "440BX Desktop Reference Platform",
+        "ansible_board_serial": "None",
+        "ansible_board_vendor": "Intel Corporation",
+        "ansible_board_version": "None",
+        "ansible_chassis_asset_tag": "No Asset Tag",
+        "ansible_chassis_serial": "None",
+        "ansible_chassis_vendor": "No Enclosure",
+        "ansible_chassis_version": "N/A",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-5.14.0-592.el9.x86_64",
+            "crashkernel": "2G-64G:256M,64G-:512M",
+            "quiet": true,
+            "rd.lvm.lv": "cs/swap",
+            "resume": "/dev/mapper/cs-swap",
+            "rhgb": true,
+            "ro": true,
+            "root": "/dev/mapper/cs-root"
+        },
+        "ansible_date_time": {
+            "date": "2025-07-13",
+            "day": "13",
+            "epoch": "1752387235",
+            "epoch_int": "1752387235",
+            "hour": "11",
+            "iso8601": "2025-07-13T06:13:55Z",
+            "iso8601_basic": "20250713T114355750262",
+            "iso8601_basic_short": "20250713T114355",
+            "iso8601_micro": "2025-07-13T06:13:55.750262Z",
+            "minute": "43",
+            "month": "07",
+            "second": "55",
+            "time": "11:43:55",
+            "tz": "IST",
+            "tz_dst": "IST",
+            "tz_offset": "+0530",
+            "weekday": "Sunday",
+            "weekday_number": "0",
+            "weeknumber": "27",
+            "year": "2025"
+        },
+        "ansible_default_ipv4": {
+            "address": "192.168.206.141",
+            "alias": "ens160",
+            "broadcast": "192.168.206.255",
+            "gateway": "192.168.206.2",
+            "interface": "ens160",
+            "macaddress": "00:0c:29:80:b5:e6",
+            "mtu": 1500,
+            "netmask": "255.255.255.0",
+            "network": "192.168.206.0",
+            "prefix": "24",
+            "type": "ether"
+        },
+        "ansible_default_ipv6": {},
+        "ansible_device_links": {
+            "ids": {
+                "dm-0": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1"
+                ],
+                "dm-1": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n"
+                ],
+                "nvme0n1": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08"
+                ],
+                "nvme0n1p1": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                    "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08-part1"
+                ],
+                "nvme0n1p2": [
+                    "lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                    "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08-part2"
+                ],
+                "sr0": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ]
+            },
+            "labels": {
+                "sr0": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ]
+            },
+            "masters": {
+                "nvme0n1p2": [
+                    "dm-0",
+                    "dm-1"
+                ]
+            },
+            "uuids": {
+                "dm-0": [
+                    "b1390254-4686-4631-be60-e7bdf91690bc"
+                ],
+                "dm-1": [
+                    "63e44f73-8070-4879-b8a0-cfde1f67b8d3"
+                ],
+                "nvme0n1p1": [
+                    "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                ],
+                "sr0": [
+                    "2025-06-17-03-58-54-00"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "dm-0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [
+                        "dm-name-cs-root",
+                        "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "b1390254-4686-4631-be60-e7bdf91690bc"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "35643392",
+                "sectorsize": "512",
+                "size": "17.00 GB",
+                "support_discard": "512",
+                "vendor": null,
+                "virtual": 1
+            },
+            "dm-1": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [
+                        "dm-name-cs-swap",
+                        "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "63e44f73-8070-4879-b8a0-cfde1f67b8d3"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "4194304",
+                "sectorsize": "512",
+                "size": "2.00 GB",
+                "support_discard": "512",
+                "vendor": null,
+                "virtual": 1
+            },
+            "nvme0n1": {
+                "holders": [],
+                "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+                "links": {
+                    "ids": [
+                        "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                        "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                        "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VMware Virtual NVMe Disk",
+                "partitions": {
+                    "nvme0n1p1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [
+                                "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                                "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                                "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08-part1"
+                            ],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                            ]
+                        },
+                        "sectors": "2097152",
+                        "sectorsize": 512,
+                        "size": "1.00 GB",
+                        "start": "2048",
+                        "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                    },
+                    "nvme0n1p2": {
+                        "holders": [
+                            "cs-swap",
+                            "cs-root"
+                        ],
+                        "links": {
+                            "ids": [
+                                "lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4",
+                                "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                                "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                                "nvme-eui.4970b1fbfff5b0ce000c296c27a2fb08-part2"
+                            ],
+                            "labels": [],
+                            "masters": [
+                                "dm-0",
+                                "dm-1"
+                            ],
+                            "uuids": []
+                        },
+                        "sectors": "39843840",
+                        "sectorsize": 512,
+                        "size": "19.00 GB",
+                        "start": "2099200",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "none",
+                "sectors": "41943040",
+                "sectorsize": "512",
+                "serial": "VMware",
+                "size": "20.00 GB",
+                "support_discard": "512",
+                "vendor": null,
+                "virtual": 1
+            },
+            "sr0": {
+                "holders": [],
+                "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+                "links": {
+                    "ids": [
+                        "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                    ],
+                    "labels": [
+                        "CentOS-Stream-9-BaseOS-x86_64"
+                    ],
+                    "masters": [],
+                    "uuids": [
+                        "2025-06-17-03-58-54-00"
+                    ]
+                },
+                "model": "VMware IDE CDR10",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "0",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2698496",
+                "sectorsize": "2048",
+                "size": "1.29 GB",
+                "support_discard": "2048",
+                "vendor": "NECVMWar",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "CentOS",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/centos-release",
+        "ansible_distribution_file_variety": "CentOS",
+        "ansible_distribution_major_version": "9",
+        "ansible_distribution_release": "Stream",
+        "ansible_distribution_version": "9",
+        "ansible_dns": {
+            "nameservers": [
+                "192.168.206.2"
+            ],
+            "search": [
+                "localdomain"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_ens160": {
+            "active": true,
+            "device": "ens160",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on",
+                "hsr_dup_offload": "off [fixed]",
+                "hsr_fwd_offload": "off [fixed]",
+                "hsr_tag_ins_offload": "off [fixed]",
+                "hsr_tag_rm_offload": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "on",
+                "loopback": "off [fixed]",
+                "macsec_hw_offload": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "on",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_gro_list": "off",
+                "rx_udp_gro_forwarding": "off",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "on [fixed]",
+                "rx_vlan_offload": "on",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "off [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_list": "off [fixed]",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_nocache_copy": "off",
+                "tx_scatter_gather": "on",
+                "tx_scatter_gather_fraglist": "off [fixed]",
+                "tx_sctp_segmentation": "off [fixed]",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "off [fixed]",
+                "tx_tcp_mangleid_segmentation": "off",
+                "tx_tcp_segmentation": "on",
+                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                "tx_udp_segmentation": "off [fixed]",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "on",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "off [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "192.168.206.141",
+                "broadcast": "192.168.206.255",
+                "netmask": "255.255.255.0",
+                "network": "192.168.206.0",
+                "prefix": "24"
+            },
+            "ipv6": [
+                {
+                    "address": "fe80::20c:29ff:fe80:b5e6",
+                    "prefix": "64",
+                    "scope": "link"
+                }
+            ],
+            "macaddress": "00:0c:29:80:b5:e6",
+            "module": "vmxnet3",
+            "mtu": 1500,
+            "pciid": "0000:03:00.0",
+            "promisc": false,
+            "speed": 10000,
+            "timestamping": [],
+            "type": "ether"
+        },
+        "ansible_env": {
+            "BASH_FUNC_which%%": "() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}",
+            "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/0/bus",
+            "DEBUGINFOD_IMA_CERT_PATH": "/etc/keys/ima:",
+            "DEBUGINFOD_URLS": "https://debuginfod.centos.org/ ",
+            "DOCKER_HOST": "unix:///run/podman/podman.sock",
+            "HISTCONTROL": "ignoredups",
+            "HISTSIZE": "1000",
+            "HOME": "/root",
+            "HOSTNAME": "control-node",
+            "LANG": "en_US.UTF-8",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "root",
+            "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:",
+            "MAIL": "/var/spool/mail/root",
+            "MOTD_SHOWN": "pam",
+            "PATH": "/root/.local/bin:/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin",
+            "PWD": "/root",
+            "SELINUX_LEVEL_REQUESTED": "",
+            "SELINUX_ROLE_REQUESTED": "",
+            "SELINUX_USE_CURRENT_RANGE": "",
+            "SHELL": "/bin/bash",
+            "SHLVL": "2",
+            "SSH_CLIENT": "192.168.206.1 55401 22",
+            "SSH_CONNECTION": "192.168.206.1 55401 192.168.206.141 22",
+            "SSH_TTY": "/dev/pts/2",
+            "TERM": "xterm",
+            "USER": "root",
+            "XDG_DATA_DIRS": "/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+            "XDG_RUNTIME_DIR": "/run/user/0",
+            "XDG_SESSION_CLASS": "user",
+            "XDG_SESSION_ID": "4",
+            "XDG_SESSION_TYPE": "tty",
+            "_": "/usr/bin/python3",
+            "which_declare": "declare -f"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "control-node",
+        "ansible_hostname": "control-node",
+        "ansible_hostnqn": "nqn.2014-08.org.nvmexpress:uuid:82524d56-dd18-9403-8cad-86cb1c80b5e6",
+        "ansible_interfaces": [
+            "ens160",
+            "lo"
+        ],
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "5.14.0-592.el9.x86_64",
+        "ansible_kernel_version": "#1 SMP PREEMPT_DYNAMIC Fri Jun 6 09:58:38 UTC 2025",
+        "ansible_lo": {
+            "active": true,
+            "device": "lo",
+            "features": {
+                "esp_hw_offload": "off [fixed]",
+                "esp_tx_csum_hw_offload": "off [fixed]",
+                "generic_receive_offload": "on",
+                "generic_segmentation_offload": "on",
+                "highdma": "on [fixed]",
+                "hsr_dup_offload": "off [fixed]",
+                "hsr_fwd_offload": "off [fixed]",
+                "hsr_tag_ins_offload": "off [fixed]",
+                "hsr_tag_rm_offload": "off [fixed]",
+                "hw_tc_offload": "off [fixed]",
+                "l2_fwd_offload": "off [fixed]",
+                "large_receive_offload": "off [fixed]",
+                "loopback": "on [fixed]",
+                "macsec_hw_offload": "off [fixed]",
+                "ntuple_filters": "off [fixed]",
+                "receive_hashing": "off [fixed]",
+                "rx_all": "off [fixed]",
+                "rx_checksumming": "on [fixed]",
+                "rx_fcs": "off [fixed]",
+                "rx_gro_hw": "off [fixed]",
+                "rx_gro_list": "off",
+                "rx_udp_gro_forwarding": "off",
+                "rx_udp_tunnel_port_offload": "off [fixed]",
+                "rx_vlan_filter": "off [fixed]",
+                "rx_vlan_offload": "off [fixed]",
+                "rx_vlan_stag_filter": "off [fixed]",
+                "rx_vlan_stag_hw_parse": "off [fixed]",
+                "scatter_gather": "on",
+                "tcp_segmentation_offload": "on",
+                "tls_hw_record": "off [fixed]",
+                "tls_hw_rx_offload": "off [fixed]",
+                "tls_hw_tx_offload": "off [fixed]",
+                "tx_checksum_fcoe_crc": "off [fixed]",
+                "tx_checksum_ip_generic": "on [fixed]",
+                "tx_checksum_ipv4": "off [fixed]",
+                "tx_checksum_ipv6": "off [fixed]",
+                "tx_checksum_sctp": "on [fixed]",
+                "tx_checksumming": "on",
+                "tx_esp_segmentation": "off [fixed]",
+                "tx_fcoe_segmentation": "off [fixed]",
+                "tx_gre_csum_segmentation": "off [fixed]",
+                "tx_gre_segmentation": "off [fixed]",
+                "tx_gso_list": "on",
+                "tx_gso_partial": "off [fixed]",
+                "tx_gso_robust": "off [fixed]",
+                "tx_ipxip4_segmentation": "off [fixed]",
+                "tx_ipxip6_segmentation": "off [fixed]",
+                "tx_nocache_copy": "off [fixed]",
+                "tx_scatter_gather": "on [fixed]",
+                "tx_scatter_gather_fraglist": "on [fixed]",
+                "tx_sctp_segmentation": "on",
+                "tx_tcp6_segmentation": "on",
+                "tx_tcp_ecn_segmentation": "on",
+                "tx_tcp_mangleid_segmentation": "on",
+                "tx_tcp_segmentation": "on",
+                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                "tx_udp_segmentation": "on",
+                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                "tx_udp_tnl_segmentation": "off [fixed]",
+                "tx_vlan_offload": "off [fixed]",
+                "tx_vlan_stag_hw_insert": "off [fixed]",
+                "vlan_challenged": "on [fixed]"
+            },
+            "hw_timestamp_filters": [],
+            "ipv4": {
+                "address": "127.0.0.1",
+                "broadcast": "",
+                "netmask": "255.0.0.0",
+                "network": "127.0.0.0",
+                "prefix": "8"
+            },
+            "ipv6": [
+                {
+                    "address": "::1",
+                    "prefix": "128",
+                    "scope": "host"
+                }
+            ],
+            "mtu": 65536,
+            "promisc": false,
+            "timestamping": [],
+            "type": "loopback"
+        },
+        "ansible_loadavg": {
+            "15m": 0.0,
+            "1m": 0.01,
+            "5m": 0.02
+        },
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_lvm": {
+            "lvs": {
+                "root": {
+                    "size_g": "17.00",
+                    "vg": "cs"
+                },
+                "swap": {
+                    "size_g": "2.00",
+                    "vg": "cs"
+                }
+            },
+            "pvs": {
+                "/dev/nvme0n1p2": {
+                    "free_g": "0",
+                    "size_g": "19.00",
+                    "vg": "cs"
+                }
+            },
+            "vgs": {
+                "cs": {
+                    "free_g": "0",
+                    "num_lvs": "2",
+                    "num_pvs": "1",
+                    "size_g": "19.00"
+                }
+            }
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "9bf45f39af49461d99600b4882b2f2a6",
+        "ansible_memfree_mb": 675,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 1245,
+                "used": 2105
+            },
+            "real": {
+                "free": 675,
+                "total": 3350,
+                "used": 2675
+            },
+            "swap": {
+                "cached": 0,
+                "free": 2047,
+                "total": 2047,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 3350,
+        "ansible_mounts": [
+            {
+                "block_available": 2754956,
+                "block_size": 4096,
+                "block_total": 4439040,
+                "block_used": 1684084,
+                "device": "/dev/mapper/cs-root",
+                "fstype": "xfs",
+                "inode_available": 8725199,
+                "inode_total": 8910848,
+                "inode_used": 185649,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                "size_available": 11284299776,
+                "size_total": 18182307840,
+                "uuid": "b1390254-4686-4631-be60-e7bdf91690bc"
+            },
+            {
+                "block_available": 150431,
+                "block_size": 4096,
+                "block_total": 245760,
+                "block_used": 95329,
+                "device": "/dev/nvme0n1p1",
+                "fstype": "xfs",
+                "inode_available": 523928,
+                "inode_total": 524288,
+                "inode_used": 360,
+                "mount": "/boot",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                "size_available": 616165376,
+                "size_total": 1006632960,
+                "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+            }
+        ],
+        "ansible_nodename": "control-node",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-5.14.0-592.el9.x86_64",
+            "crashkernel": "2G-64G:256M,64G-:512M",
+            "quiet": true,
+            "rd.lvm.lv": [
+                "cs/root",
+                "cs/swap"
+            ],
+            "resume": "/dev/mapper/cs-swap",
+            "rhgb": true,
+            "ro": true,
+            "root": "/dev/mapper/cs-root"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+            "1",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+            "2",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz",
+            "3",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz"
+        ],
+        "ansible_processor_cores": 2,
+        "ansible_processor_count": 2,
+        "ansible_processor_nproc": 4,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 4,
+        "ansible_product_name": "VMware Virtual Platform",
+        "ansible_product_serial": "VMware-56 4d 52 82 18 dd 03 94-8c ad 86 cb 1c 80 b5 e6",
+        "ansible_product_uuid": "82524d56-dd18-9403-8cad-86cb1c80b5e6",
+        "ansible_product_version": "None",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 21,
+                "minor": 9,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                9,
+                21,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.9.21",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "config_mode": "enforcing",
+            "mode": "enforcing",
+            "policyvers": 33,
+            "status": "enabled",
+            "type": "targeted"
+        },
+        "ansible_selinux_python_present": true,
+        "ansible_service_mgr": "systemd",
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDNOSBha12oVlmkWntxr0BFcv7PIcLJSuFmMfVkeQ9fNaK01emrjSGdx4y1eElsglyM0oldi3l2SQMlZOs2Fjpg=",
+        "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIApFTh34BPpd0W/QOgowb4ZXERGu4IwGUhl4mNvQPW9v",
+        "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQC52IilBt/ohae7GOINwaIa6PyeE6CCHgFt1Yd5gqtMe1WzFX32s/waD4BpfSkF/pKtSssdL6ix8bbr9X5aHvpdjxEshZxUbMd0UZbk1gnKqLMTHxz/0qdeimpz+SDPn28mdXAZggRLDCGILV0c2dG0qo881JTziTghPG47BI2FGd1RLvz6gCzo4vJUHUh0QEEpcqneHIiFNOCTvc2q51El+TT3HSOpe+u/4946JcPjw/0XKlTOogkjnpIbC4Qj0eaLj5t2oGo/kGhuLdhX25Pdkz8PgQanXjMzE8pmlQWrIXsIEeH5+nwiCx8BaGtiGwNqHkExsMlD4pqdR0u2In2u3RaWjJZQPHbfvcQS3Xt/IMDdhPVYA6iHcp2fq/CVt1s+tpKzozpa/BaWIbnxdpt62gnHLo+J7wbvKE92TWy13dWKfsUHN+yCWbGOlSdqWCz4drDpjV/4ByWAKP2aLiGtECtWiI0UgmjWXy8dsm4yHUVkVCLfOLBLlXj9suKD3hc=",
+        "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+        "ansible_swapfree_mb": 2047,
+        "ansible_swaptotal_mb": 2047,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [],
+        "ansible_system_capabilities_enforced": "False",
+        "ansible_system_vendor": "VMware, Inc.",
+        "ansible_uptime_seconds": 1697,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_tech_guest": [
+            "VMware"
+        ],
+        "ansible_virtualization_tech_host": [],
+        "ansible_virtualization_type": "VMware",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+[root@control-node ~]# [root@control-node ~]# ansible localhost -m setupall-playbook multipletask.yml--syntax-check multipletask.ymlmultipletask.yml--syntax-check multipletask.ymlmultipletask.yml
+ERROR! the playbook: multipletask.yml could not be found
+[root@control-node ~]# cd /anetc/ansible/plybook/
+[root@control-node plybook]# cd /etc/ansible/plybook/ansible-playbook multipletask.yml
+
+PLAY [MultiTask Opration] *************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ****************************************************************************************************************************************************************************
+ok: [192.168.206.131]
+ok: [192.168.206.143]
+ok: [192.168.206.140]
+ok: [192.168.206.142]
+ok: [192.168.206.137]
+ok: [192.168.206.139]
+
+TASK [Show Os Information] ************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "Server Running On CentOS 9"
+}
+ok: [192.168.206.143] => {
+    "msg": "Server Running On CentOS 9"
+}
+ok: [192.168.206.137] => {
+    "msg": "Server Running On CentOS 9"
+}
+ok: [192.168.206.140] => {
+    "msg": "Server Running On CentOS 9"
+}
+ok: [192.168.206.131] => {
+    "msg": "Server Running On RedHat 9.2"
+}
+ok: [192.168.206.139] => {
+    "msg": "Server Running On CentOS 9"
+}
+
+TASK [Show IP Address] ****************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "The primary IP address is 192.168.206.142"
+}
+ok: [192.168.206.143] => {
+    "msg": "The primary IP address is 192.168.206.143"
+}
+ok: [192.168.206.137] => {
+    "msg": "The primary IP address is 192.168.206.137"
+}
+ok: [192.168.206.140] => {
+    "msg": "The primary IP address is 192.168.206.140"
+}
+ok: [192.168.206.131] => {
+    "msg": "The primary IP address is 192.168.206.131"
+}
+ok: [192.168.206.139] => {
+    "msg": "The primary IP address is 192.168.206.139"
+}
+
+TASK [Total RAM] **********************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "Total RAM In System 3350 MB"
+}
+ok: [192.168.206.143] => {
+    "msg": "Total RAM In System 3350 MB"
+}
+ok: [192.168.206.137] => {
+    "msg": "Total RAM In System 8210 MB"
+}
+ok: [192.168.206.140] => {
+    "msg": "Total RAM In System 8210 MB"
+}
+ok: [192.168.206.131] => {
+    "msg": "Total RAM In System 31816 MB"
+}
+ok: [192.168.206.139] => {
+    "msg": "Total RAM In System 8210 MB"
+}
+
+PLAY RECAP ****************************************************************************************************************************************************************************************
+192.168.206.131            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.137            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.139            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.140            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.142            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.143            : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[root@control-node plybook]# [root@control-node plybook]# 
+^C
+[root@control-node plybook]# ansible-doc -l | grep setupansible-doc -l | grep setup
+ansible.builtin.setup                                                                            Gathers fa...         
+ansible.windows.setup                                                                            Gathers fa...         
+community.network.avi_actiongroupconfig                                                          Module for setup of ActionGroupCon...
+community.network.avi_alertconfig                                                                Module for setup of AlertCon...
+community.network.avi_alertemailconfig                                                           Module for setup of AlertEmailCon...
+community.network.avi_alertscriptconfig                                                          Module for setup of AlertScriptCon...
+community.network.avi_alertsyslogconfig                                                          Module for setup of AlertSyslogCon...
+community.network.avi_analyticsprofile                                                           Module for setup of AnalyticsProf...
+community.network.avi_applicationpersistenceprofile                                              Module for setup of ApplicationPersistenceProf...
+community.network.avi_applicationprofile                                                         Module for setup of ApplicationProf...
+community.network.avi_authprofile                                                                Module for setup of AuthProf...
+community.network.avi_autoscalelaunchconfig                                                      Module for setup of AutoScaleLaunchCon...
+community.network.avi_backup                                                                     Module for setup of Bac...
+community.network.avi_backupconfiguration                                                        Module for setup of BackupConfigurat...
+community.network.avi_certificatemanagementprofile                                               Module for setup of CertificateManagementProf...
+community.network.avi_cloud                                                                      Module for setup of Cl...
+community.network.avi_cloudconnectoruser                                                         Module for setup of CloudConnectorU...
+community.network.avi_cloudproperties                                                            Module for setup of CloudPropert...
+community.network.avi_cluster                                                                    Module for setup of Clus...
+community.network.avi_clusterclouddetails                                                        Module for setup of ClusterCloudDeta...
+community.network.avi_controllerproperties                                                       Module for setup of ControllerPropert...
+community.network.avi_customipamdnsprofile                                                       Module for setup of CustomIpamDnsProf...
+community.network.avi_dnspolicy                                                                  Module for setup of DnsPol...
+community.network.avi_errorpagebody                                                              Module for setup of ErrorPageB...
+community.network.avi_errorpageprofile                                                           Module for setup of ErrorPageProf...
+community.network.avi_gslb                                                                       Module for setup of G...
+community.network.avi_gslbgeodbprofile                                                           Module for setup of GslbGeoDbProf...
+community.network.avi_gslbservice                                                                Module for setup of GslbServ...
+community.network.avi_hardwaresecuritymodulegroup                                                Module for setup of HardwareSecurityModuleGr...
+community.network.avi_healthmonitor                                                              Module for setup of HealthMoni...
+community.network.avi_httppolicyset                                                              Module for setup of HTTPPolicy...
+community.network.avi_ipaddrgroup                                                                Module for setup of IpAddrGr...
+community.network.avi_ipamdnsproviderprofile                                                     Module for setup of IpamDnsProviderProf...
+community.network.avi_l4policyset                                                                Module for setup of L4Policy...
+community.network.avi_microservicegroup                                                          Module for setup of MicroServiceGr...
+community.network.avi_network                                                                    Module for setup of Netw...
+community.network.avi_networkprofile                                                             Module for setup of NetworkProf...
+community.network.avi_networksecuritypolicy                                                      Module for setup of NetworkSecurityPol...
+community.network.avi_pkiprofile                                                                 Module for setup of PKIProf...
+community.network.avi_pool                                                                       Module for setup of P...
+community.network.avi_poolgroup                                                                  Module for setup of PoolGr...
+community.network.avi_poolgroupdeploymentpolicy                                                  Module for setup of PoolGroupDeploymentPol...
+community.network.avi_prioritylabels                                                             Module for setup of PriorityLab...
+community.network.avi_role                                                                       Module for setup of R...
+community.network.avi_scheduler                                                                  Module for setup of Schedu...
+community.network.avi_seproperties                                                               Module for setup of SePropert...
+community.network.avi_serverautoscalepolicy                                                      Module for setup of ServerAutoScalePol...
+community.network.avi_serviceengine                                                              Module for setup of ServiceEng...
+community.network.avi_serviceenginegroup                                                         Module for setup of ServiceEngineGr...
+community.network.avi_snmptrapprofile                                                            Module for setup of SnmpTrapProf...
+community.network.avi_sslkeyandcertificate                                                       Module for setup of SSLKeyAndCertific...
+community.network.avi_sslprofile                                                                 Module for setup of SSLProf...
+community.network.avi_stringgroup                                                                Module for setup of StringGr...
+community.network.avi_systemconfiguration                                                        Module for setup of SystemConfigurat...
+community.network.avi_tenant                                                                     Module for setup of Ten...
+community.network.avi_trafficcloneprofile                                                        Module for setup of TrafficCloneProf...
+community.network.avi_useraccountprofile                                                         Module for setup of UserAccountProf...
+community.network.avi_virtualservice                                                             Module for setup of VirtualServ...
+community.network.avi_vrfcontext                                                                 Module for setup of VrfCont...
+community.network.avi_vsdatascriptset                                                            Module for setup of VSDataScript...
+community.network.avi_vsvip                                                                      Module for setup of Vs...
+community.network.avi_webhook                                                                    Module for setup of Webh...
+community.network.pn_switch_setup                                                                CLI command ...       
+ibm.spectrum_virtualize.ibm_svc_complete_initial_setup                                           This module completes the initial setup configu...
+ibm.spectrum_virtualize.ibm_svc_initial_setup                                                    This module allows users to manage the initial setup configuration on IBM Spectrum Virtualize ...
+[root@control-node plybook]# [root@control-node plybook]# ansible-doc setupansible-doc setup
+> ANSIBLE.BUILTIN.SETUP    (/usr/lib/python3.9/site-packages/ansible/modules/setup.py)
+
+        This module is automatically called by playbooks to gather useful variables about remote hosts that can be used in playbooks. It can also be
+        executed directly by `/usr/bin/ansible' to check what variables are available to a host. Ansible provides many `facts' about the system,
+        automatically. This module is also supported for Windows targets.
+
+ADDED IN: historical
+
+OPTIONS (= is mandatory):
+
+- fact_path
+        Path used for local ansible facts (`*.fact') - files in this dir will be run (if executable) and their results be added to `ansible_local' facts. If
+        a file is not executable it is read instead. File/results format can be JSON or INI-format. The default `fact_path' can be specified in
+        `ansible.cfg' for when setup is automatically called as part of `gather_facts'. NOTE - For windows clients, the results will be added to a variable
+        named after the local file (without extension suffix), rather than `ansible_local'.
+        Since Ansible 2.1, Windows hosts can use `fact_path'. Make sure that this path exists on the target host. Files in this path MUST be PowerShell
+        scripts `.ps1' which outputs an object. This object will be formatted by Ansible as json so the script should be outputting a raw hashtable, array,
+        or other primitive object.
+        default: /etc/ansible/facts.d
+        type: path
+        added in: version 1.3 of ansible-core
+
+
+- filter
+        If supplied, only return facts that match one of the shell-style (fnmatch) pattern. An empty list basically means 'no filter'. As of Ansible 2.11,
+        the type has changed from string to list and the default has became an empty list. A simple string is still accepted and works as a single pattern.
+        The behaviour prior to Ansible 2.11 remains.
+        default: []
+        elements: str
+        type: list
+        added in: version 1.1 of ansible-core
+
+
+- gather_subset
+        If supplied, restrict the additional facts collected to the given subset. Possible values: `all', `all_ipv4_addresses', `all_ipv6_addresses',
+        `apparmor', `architecture', `caps', `chroot',`cmdline', `date_time', `default_ipv4', `default_ipv6', `devices', `distribution',
+        `distribution_major_version', `distribution_release', `distribution_version', `dns', `effective_group_ids', `effective_user_id', `env', `facter',
+        `fips', `hardware', `interfaces', `is_chroot', `iscsi', `kernel', `local', `lsb', `machine', `machine_id', `mounts', `network', `ohai', `os_family',
+        `pkg_mgr', `platform', `processor', `processor_cores', `processor_count', `python', `python_version', `real_user_id', `selinux', `service_mgr',
+        `ssh_host_key_dsa_public', `ssh_host_key_ecdsa_public', `ssh_host_key_ed25519_public', `ssh_host_key_rsa_public', `ssh_host_pub_keys',
+        `ssh_pub_keys', `system', `system_capabilities', `system_capabilities_enforced', `user', `user_dir', `user_gecos', `user_gid', `user_id',
+        `user_shell', `user_uid', `virtual', `virtualization_role', `virtualization_type'. Can specify a list of values to specify a larger subset. Values
+:        can also be used with an initial `!' to specify that that specific subset should not be collected.  For instance:
+:        `!hardware,!network,!virtual,!ohai,!facter'. If `!all' is specified then only the min subset is collected. To avoid collecting even the min subset,
+:        specify `!all,!min'. To collect only specific facts, use `!all,!min', and specify the particular fact subsets. Use the filter parameter if you do
+:        not want to display some collected facts.
+:        default: all
+:        elements: str
+:        type: list
+:        added in: version 2.1 of ansible-core
+:
+:
+:- gather_timeout
+:        Set the default timeout in seconds for individual fact gathering.
+:        default: 10
+:        type: int
+:        added in: version 2.2 of ansible-core
+:
+:
+:
+:ATTRIBUTES:
+:
+:        check_mode:
+:          description: Can run in check_mode and return changed status prediction without
+:            modifying target
+:          support: full
+:        diff_mode:
+:          description: Will return details on what has changed (or possibly needs changing
+:            in check_mode), when in diff mode
+:          support: none
+:        facts:
+:          description: Action returns an `ansible_facts' dictionary that will update existing
+:            host facts
+:          support: full
+:        platform:
+:          description: Target OS/families that can be operated against
+:          platforms: posix, windows
+:          support: N/A
+:
+:NOTES:
+:      * More ansible facts will be added with successive releases. If `facter' or `ohai' are installed, variables from these programs will also be
+:        snapshotted into the JSON file for usage in templating. These variables are prefixed with `facter_' and `ohai_' so it's easy to tell their
+:        source. All variables are bubbled up to the caller. Using the ansible facts and choosing to not install `facter' and `ohai' means you can
+:        avoid Ruby-dependencies on your remote systems. (See also [community.general.facter] and [community.general.ohai].)
+:      * The filter option filters only the first level subkey below ansible_facts.
+:      * If the target host is Windows, you will not currently have the ability to use `filter' as this is provided by a simpler implementation of the
+:        module.
+:      * This module should be run with elevated privileges on BSD systems to gather facts like ansible_product_version.
+:      * For more information about delegated facts, please check
+:        https://docs.ansible.com/ansible/latest/user_guide/playbooks_delegation.html#delegating-facts.
+:
+:
+:AUTHOR: Ansible Core Team, Michael DeHaan
+:
+:EXAMPLES:
+:
+:# Display facts from all hosts and store them indexed by `hostname` at `/tmp/facts`.
+:# ansible all -m ansible.builtin.setup --tree /tmp/facts
+:
+:# Display only facts regarding memory found by ansible on all hosts and output them.
+:# ansible all -m ansible.builtin.setup -a 'filter=ansible_*_mb'
+:
+:# Display only facts returned by facter.
+:# ansible all -m ansible.builtin.setup -a 'filter=facter_*'
+:
+:# Collect only facts returned by facter.
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=!all,facter'
+:
+:- name: Collect only facts returned by facter
+:  ansible.builtin.setup:
+:    gather_subset:
+:      - '!all'
+:      - '!<any valid subset>'
+:      - facter
+:
+:- name: Filter and return only selected facts
+:  ansible.builtin.setup:
+:    filter:
+:      - 'ansible_distribution'
+:      - 'ansible_machine_id'
+:      - 'ansible_*_mb'
+:
+:# Display only facts about certain interfaces.
+:# ansible all -m ansible.builtin.setup -a 'filter=ansible_eth[0-2]'
+:
+:# Restrict additional gathered facts to network and virtual (includes default minimum facts)
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=network,virtual'
+:
+:# Collect only network and virtual (excludes default minimum facts)
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=!all,network,virtual'
+:
+:# Do not call puppet facter or ohai even if present.
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=!facter,!ohai'
+:
+:# Only collect the default minimum amount of facts:
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=!all'
+:
+:# Collect no facts, even the default minimum subset of facts:
+:# ansible all -m ansible.builtin.setup -a 'gather_subset=!all,!min'
+:
+:# Display facts from Windows hosts with custom facts stored in C:\custom_facts.
+:# ansible windows -m ansible.builtin.setup -a "fact_path='c:\custom_facts'"
+:
+:# Gathers facts for the machines in the dbservers group (a.k.a Delegating facts)
+:- hosts: app_servers
+:  tasks:
+:    - name: Gather facts from db servers
+:      ansible.builtin.setup:
+:      delegate_to: "{{ item }}"
+:      delegate_facts: true
+:      loop: "{{ groups['dbservers'] }}"
+:
+:(END)(END)(END)(END)(END)(END)(END)(END)(END)(END)(END)(END)(END)(END)(END) ::qq[root@control-node plybook]# [root@control-node plybook]# ls
+app_install.yml  file-transfer.yml  frist_pb.yml  multipletask.yml  multi-transfer.yml  rename.yaml  Single_task.yml  temp.yml  terraform_install.yml  tmp.yml  uptime.txt  vars-example.yml
+[root@control-node plybook]# vi sinnglm Single_task.ymlSingle_task.yml
+"Single_task.yml" 12L, 232B  zz           ---
+- name: MultiTask Opration  hosts: allbecome: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Show Os Informationdebug:msg: "Server Running On {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  1,1All~@k   2~@k   3~@k   4~@k   5~@k   4~@k   3~@k   2~@k   2~@k   3~@k   4~@k   5~@k   6~@k   7~@k   8~@k   9~@k   10~@k   1~@k   2~@k   3~@k   4~@k   5~@k   6~@k   7~@k   8~@k   9~@k   20~@k   1~@k   2~@k   3~@k   4~@k   5~@k   6~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   ~@k   i -- INSERT --2,26All76543210198765432109 S10i1n2g3l4e5-6T7a8s9k203,134,145,206,3 7,98,201---
+- name: Single-Task
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Show Os Informationdebug:msg: "Server Running On {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+
+~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               ~                                                                                               -- INSERT --8,21All2345678930121029876543210198D9i20s1k23I4n5f6o79,1310,2789301232 {{ ansible_distribution }} {{ ansible_distribution_version }}"1 {{ ansible_distribution }} {{ ansible_distribution_version }}"0{{ ansible_distribution }} {{ ansible_distribution_version }}"29 {{ ansible_distribution }} {{ ansible_distribution_version }}"8 {{ ansible_distribution }} {{ ansible_distribution_version }}"7 {{ ansible_distribution }} {{ ansible_distribution_version }}"6 {{ ansible_distribution }} {{ ansible_distribution_version }}"5 {{ ansible_distribution }} {{ ansible_distribution_version }}"4 {{ ansible_distribution }} {{ ansible_distribution_version }}"3 {{ ansible_distribution }} {{ ansible_distribution_version }}"2D {{ ansible_distribution }} {{ ansible_distribution_version }}"3i {{ ansible_distribution }} {{ ansible_distribution_version }}"4k {{ ansible_distribution }} {{ ansible_distribution_version }}"5 {{ ansible_distribution }} {{ ansible_distribution_version }}"4s {{ ansible_distribution }} {{ ansible_distribution_version }}"5k {{ ansible_distribution }} {{ ansible_distribution_version }}"6 {{ ansible_distribution }} {{ ansible_distribution_version }}"7I {{ ansible_distribution }} {{ ansible_distribution_version }}"8n {{ ansible_distribution }} {{ ansible_distribution_version }}"9f {{ ansible_distribution }} {{ ansible_distribution_version }}"30o {{ ansible_distribution }} {{ ansible_distribution_version }}"1{}2{{}}343{{}}2{ ansible_distribution } {{ ansible_distribution_version }}"{{} 1{{}}2{{}}1 { ansible_distribution } {{ ansible_distribution_version }}" {}}2{{}}34{}56789401234567895012345{}6{{}}78{}{}9{{}}601{}23456789701234567898012345678990{}1{{}}23"{{}"2"{"1"0"89"8"7"6"5"4"3"2"1"0"79"8"7"6"5"4"3"2"1"0"69"8"7"6"5"4"3"2"1"0"59"{}8"{{}"7"{"6"5"4"3"2"1"0"49"8"7"6"5"4"3"2"1"0"39"8"7"6"5"4"3"2{"3{"4ansible_devices"49}"{}50}"{{}}1{}2^[  10,51All::wq!"Single_task.yml" 12L, 177B written
+[root@control-node plybook]# vim Single_task.ymlvim Single_task.ymllsansible-doc setuplsvim Single_task.ymllsansible-doc setuplsvim Single_task.ymlansible-playbook --syntax-check Single_task.ymlSingle_task.yml
+
+playbook: Single_task.yml
+[root@control-node plybook]# ansible-playbook simngl Single_task.yml 
+
+PLAY [Single-Task] *****************************************************************************
+
+TASK [Gathering Facts] *************************************************************************
+ok: [192.168.206.131]
+ok: [192.168.206.137]
+ok: [192.168.206.140]
+ok: [192.168.206.143]
+ok: [192.168.206.142]
+ok: [192.168.206.139]
+
+TASK [Show Disk Info] **************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-cs-swap', 'dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n'], 'uuids': ['63e44f73-8070-4879-b8a0-cfde1f67b8d3'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '4194304', 'sectorsize': '512', 'size': '2.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1', 'nvme-eui.5a75ec57f458697c000c296da334673e'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '512', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1', 'nvme-eui.5a75ec57f458697c000c296da334673e-part1'], 'uuids': ['c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2', 'nvme-eui.5a75ec57f458697c000c296da334673e-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '39843840', 'sectorsize': 512, 'size': '19.00 GB', 'uuid': None, 'holders': ['cs-swap', 'cs-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '41943040', 'sectorsize': '512', 'size': '20.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001'], 'uuids': ['2025-06-17-03-58-54-00'], 'labels': ['CentOS-Stream-9-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware IDE CDR10', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '2048', 'partitions': {}, 'rotational': '0', 'scheduler_mode': 'mq-deadline', 'sectors': '2698496', 'sectorsize': '2048', 'size': '1.29 GB', 'host': 'IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-cs-root', 'dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1'], 'uuids': ['b1390254-4686-4631-be60-e7bdf91690bc'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '35643392', 'sectorsize': '512', 'size': '17.00 GB', 'host': '', 'holders': []}}"
+}
+ok: [192.168.206.143] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-cs-swap', 'dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n'], 'uuids': ['63e44f73-8070-4879-b8a0-cfde1f67b8d3'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '4194304', 'sectorsize': '512', 'size': '2.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1', 'nvme-eui.36bd8e366902ee94000c296637636e3b'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '512', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1', 'nvme-eui.36bd8e366902ee94000c296637636e3b-part1'], 'uuids': ['c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2', 'nvme-eui.36bd8e366902ee94000c296637636e3b-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '39843840', 'sectorsize': 512, 'size': '19.00 GB', 'uuid': None, 'holders': ['cs-swap', 'cs-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '41943040', 'sectorsize': '512', 'size': '20.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001'], 'uuids': ['2025-06-17-03-58-54-00'], 'labels': ['CentOS-Stream-9-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware IDE CDR10', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '2048', 'partitions': {}, 'rotational': '0', 'scheduler_mode': 'mq-deadline', 'sectors': '2698496', 'sectorsize': '2048', 'size': '1.29 GB', 'host': 'IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-cs-root', 'dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1'], 'uuids': ['b1390254-4686-4631-be60-e7bdf91690bc'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '35643392', 'sectorsize': '512', 'size': '17.00 GB', 'host': '', 'holders': []}}"
+}
+ok: [192.168.206.137] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-cs-swap', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy'], 'uuids': ['4d7546be-5606-4813-a054-6651903823ba'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '8388608', 'sectorsize': '512', 'size': '4.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1', 'nvme-eui.72214bade6d96f06000c296e2ea13fc2'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '512', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1', 'nvme-eui.72214bade6d96f06000c296e2ea13fc2-part1'], 'uuids': ['ceba9007-4504-4f35-9d52-497a9cca048f'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'ceba9007-4504-4f35-9d52-497a9cca048f', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2', 'nvme-eui.72214bade6d96f06000c296e2ea13fc2-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '81786880', 'sectorsize': 512, 'size': '39.00 GB', 'uuid': None, 'holders': ['cs-swap', 'cs-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '83886080', 'sectorsize': '512', 'size': '40.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001'], 'uuids': ['2025-06-11-03-59-56-00'], 'labels': ['CentOS-Stream-9-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware IDE CDR10', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '2048', 'partitions': {}, 'rotational': '0', 'scheduler_mode': 'mq-deadline', 'sectors': '25794816', 'sectorsize': '2048', 'size': '12.30 GB', 'host': 'IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-cs-root', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8'], 'uuids': ['63653125-aaeb-4840-b88f-60434272ad35'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '73392128', 'sectorsize': '512', 'size': '35.00 GB', 'host': '', 'holders': []}}"
+}
+ok: [192.168.206.140] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-cs-swap', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy'], 'uuids': ['4d7546be-5606-4813-a054-6651903823ba'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '8388608', 'sectorsize': '512', 'size': '4.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1', 'nvme-eui.da9ea8bdb15a25f9000c296dde585001'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '512', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1', 'nvme-eui.da9ea8bdb15a25f9000c296dde585001-part1'], 'uuids': ['ceba9007-4504-4f35-9d52-497a9cca048f'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'ceba9007-4504-4f35-9d52-497a9cca048f', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2', 'nvme-eui.da9ea8bdb15a25f9000c296dde585001-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '81786880', 'sectorsize': 512, 'size': '39.00 GB', 'uuid': None, 'holders': ['cs-swap', 'cs-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '83886080', 'sectorsize': '512', 'size': '40.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001'], 'uuids': ['2025-06-11-03-59-56-00'], 'labels': ['CentOS-Stream-9-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware IDE CDR10', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '2048', 'partitions': {}, 'rotational': '0', 'scheduler_mode': 'mq-deadline', 'sectors': '25794816', 'sectorsize': '2048', 'size': '12.30 GB', 'host': 'IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-cs-root', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8'], 'uuids': ['63653125-aaeb-4840-b88f-60434272ad35'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '73392128', 'sectorsize': '512', 'size': '35.00 GB', 'host': '', 'holders': []}}"
+}
+ok: [192.168.206.131] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-rhel-swap', 'dm-uuid-LVM-6el7KmuBxZUDqwcf3rpXVfOtxn6aCdLe4K6I0v9QkgJcCFbNxk3qjMYscS5NQnCy'], 'uuids': ['3cb65376-c6f1-408d-a961-7e81ff4cdf66'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '0', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '10485760', 'sectorsize': '512', 'size': '5.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-eui.44b3cda380a27764000c296551536247'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '0', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-eui.44b3cda380a27764000c296551536247-part1'], 'uuids': ['c6f15a58-9fba-406a-9cf9-b53b1e48dd33'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'c6f15a58-9fba-406a-9cf9-b53b1e48dd33', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-jaC3Gs-LSlU-3xxX-3pXV-dYdN-2Zq0-1IWkEO', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-eui.44b3cda380a27764000c296551536247-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '102758400', 'sectorsize': 512, 'size': '49.00 GB', 'uuid': None, 'holders': ['rhel-swap', 'rhel-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '104857600', 'sectorsize': '512', 'size': '50.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001'], 'uuids': ['2023-04-13-16-58-02-00'], 'labels': ['RHEL-9-2-0-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware SATA CD01', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '0', 'partitions': {}, 'rotational': '1', 'scheduler_mode': 'mq-deadline', 'sectors': '18742144', 'sectorsize': '2048', 'size': '8.94 GB', 'host': 'SATA controller: VMware SATA AHCI controller', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-rhel-root', 'dm-uuid-LVM-6el7KmuBxZUDqwcf3rpXVfOtxn6aCdLet0rv2itbUDHgcMpFhp8vXThdXLn1OEL3'], 'uuids': ['9401a7b6-2792-410d-9d3f-8a5a7ef17cae'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '0', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '92266496', 'sectorsize': '512', 'size': '44.00 GB', 'host': '', 'holders': []}}"
+}
+ok: [192.168.206.139] => {
+    "msg": "Server Disk Info {'dm-1': {'virtual': 1, 'links': {'ids': ['dm-name-cs-swap', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy'], 'uuids': ['4d7546be-5606-4813-a054-6651903823ba'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '8388608', 'sectorsize': '512', 'size': '4.00 GB', 'host': '', 'holders': []}, 'nvme0n1': {'virtual': 1, 'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1', 'nvme-eui.92694430b6ebd7c6000c2967a54c70e3'], 'uuids': [], 'labels': [], 'masters': []}, 'vendor': None, 'model': 'VMware Virtual NVMe Disk', 'sas_address': None, 'sas_device_handle': None, 'serial': 'VMware', 'removable': '0', 'support_discard': '512', 'partitions': {'nvme0n1p1': {'links': {'ids': ['nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1', 'nvme-eui.92694430b6ebd7c6000c2967a54c70e3-part1'], 'uuids': ['ceba9007-4504-4f35-9d52-497a9cca048f'], 'labels': [], 'masters': []}, 'start': '2048', 'sectors': '2097152', 'sectorsize': 512, 'size': '1.00 GB', 'uuid': 'ceba9007-4504-4f35-9d52-497a9cca048f', 'holders': []}, 'nvme0n1p2': {'links': {'ids': ['lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2', 'nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2', 'nvme-eui.92694430b6ebd7c6000c2967a54c70e3-part2'], 'uuids': [], 'labels': [], 'masters': ['dm-0', 'dm-1']}, 'start': '2099200', 'sectors': '81786880', 'sectorsize': 512, 'size': '39.00 GB', 'uuid': None, 'holders': ['cs-swap', 'cs-root']}}, 'rotational': '0', 'scheduler_mode': 'none', 'sectors': '83886080', 'sectorsize': '512', 'size': '40.00 GB', 'host': 'Non-Volatile memory controller: VMware NVMe SSD Controller', 'holders': []}, 'sr0': {'virtual': 1, 'links': {'ids': ['ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001'], 'uuids': ['2025-06-11-03-59-56-00'], 'labels': ['CentOS-Stream-9-BaseOS-x86_64'], 'masters': []}, 'vendor': 'NECVMWar', 'model': 'VMware IDE CDR10', 'sas_address': None, 'sas_device_handle': None, 'removable': '1', 'support_discard': '2048', 'partitions': {}, 'rotational': '0', 'scheduler_mode': 'mq-deadline', 'sectors': '25794816', 'sectorsize': '2048', 'size': '12.30 GB', 'host': 'IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)', 'holders': []}, 'dm-0': {'virtual': 1, 'links': {'ids': ['dm-name-cs-root', 'dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8'], 'uuids': ['63653125-aaeb-4840-b88f-60434272ad35'], 'labels': [], 'masters': []}, 'vendor': None, 'model': None, 'sas_address': None, 'sas_device_handle': None, 'removable': '0', 'support_discard': '512', 'partitions': {}, 'rotational': '0', 'scheduler_mode': '', 'sectors': '73392128', 'sectorsize': '512', 'size': '35.00 GB', 'host': '', 'holders': []}}"
+}
+
+PLAY RECAP *************************************************************************************
+192.168.206.131            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.137            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.139            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.140            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.142            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.143            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[root@control-node plybook]# ansible-playbook Single_task.yml --syntax-check Single_task.ymlSingle_task.yml vi Single_task.yml 
+"Single_task.yml" 12L, 177B  zz           ---
+- name: Single-Task  hosts: allbecome: yes
+  gather_facts: yes
+
+  tasks:
+    - name: Show Disk Infodebug:msg: "Server Disk Info {{ansible_devices}}"
+
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  10,51All~@k   9,12 ~@k   8,26~@k   7,8 ~@k   6,2~@k   5,19~@k   6,2 ~@k   7,8~@k   8,26~@k   9,12~@k   10,51~@k   i -- INSERT --10,51All2{}1{{}0{49876543210398765432102987654321019876543msg2109 9,9 10,9var: ansible_mounts2811,11All12,11All9 75-6- 7n8a9m10e1name:2323Show Disk Info2713,7Alld8e9b10u1g2debug:314,9Allv10a1r2var:34ansible_devices29^[  14,28All::wq!"Single_task.yml" 16L, 223B written
+[root@control-node plybook]# [root@control-node plybook]# vi Single_task.yml ansible-playbook
+
+PLAY [Single-Task] ********************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ****************************************************************************************************************************************************************************
+ok: [192.168.206.131]
+ok: [192.168.206.142]
+ok: [192.168.206.137]
+ok: [192.168.206.140]
+ok: [192.168.206.143]
+ok: [192.168.206.139]
+
+TASK [Show Disk Info] *****************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "ansible_mounts": [
+        {
+            "block_available": 3186599,
+            "block_size": 4096,
+            "block_total": 4439040,
+            "block_used": 1252441,
+            "device": "/dev/mapper/cs-root",
+            "fstype": "xfs",
+            "inode_available": 8776520,
+            "inode_total": 8910848,
+            "inode_used": 134328,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 13052309504,
+            "size_total": 18182307840,
+            "uuid": "b1390254-4686-4631-be60-e7bdf91690bc"
+        },
+        {
+            "block_available": 150431,
+            "block_size": 4096,
+            "block_total": 245760,
+            "block_used": 95329,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523928,
+            "inode_total": 524288,
+            "inode_used": 360,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 616165376,
+            "size_total": 1006632960,
+            "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+        }
+    ]
+}
+ok: [192.168.206.143] => {
+    "ansible_mounts": [
+        {
+            "block_available": 3186617,
+            "block_size": 4096,
+            "block_total": 4439040,
+            "block_used": 1252423,
+            "device": "/dev/mapper/cs-root",
+            "fstype": "xfs",
+            "inode_available": 8776520,
+            "inode_total": 8910848,
+            "inode_used": 134328,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 13052383232,
+            "size_total": 18182307840,
+            "uuid": "b1390254-4686-4631-be60-e7bdf91690bc"
+        },
+        {
+            "block_available": 150431,
+            "block_size": 4096,
+            "block_total": 245760,
+            "block_used": 95329,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523928,
+            "inode_total": 524288,
+            "inode_used": 360,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 616165376,
+            "size_total": 1006632960,
+            "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+        }
+    ]
+}
+ok: [192.168.206.137] => {
+    "ansible_mounts": [
+        {
+            "block_available": 7671629,
+            "block_size": 4096,
+            "block_total": 9157632,
+            "block_used": 1486003,
+            "device": "/dev/mapper/cs-root",
+            "fstype": "xfs",
+            "inode_available": 18178949,
+            "inode_total": 18348032,
+            "inode_used": 169083,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 31422992384,
+            "size_total": 37509660672,
+            "uuid": "63653125-aaeb-4840-b88f-60434272ad35"
+        },
+        {
+            "block_available": 151623,
+            "block_size": 4096,
+            "block_total": 245760,
+            "block_used": 94137,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523928,
+            "inode_total": 524288,
+            "inode_used": 360,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 621047808,
+            "size_total": 1006632960,
+            "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+        }
+    ]
+}
+ok: [192.168.206.140] => {
+    "ansible_mounts": [
+        {
+            "block_available": 7802323,
+            "block_size": 4096,
+            "block_total": 9157632,
+            "block_used": 1355309,
+            "device": "/dev/mapper/cs-root",
+            "fstype": "xfs",
+            "inode_available": 18214219,
+            "inode_total": 18348032,
+            "inode_used": 133813,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 31958315008,
+            "size_total": 37509660672,
+            "uuid": "63653125-aaeb-4840-b88f-60434272ad35"
+        },
+        {
+            "block_available": 151623,
+            "block_size": 4096,
+            "block_total": 245760,
+            "block_used": 94137,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523928,
+            "inode_total": 524288,
+            "inode_used": 360,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 621047808,
+            "size_total": 1006632960,
+            "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+        }
+    ]
+}
+ok: [192.168.206.131] => {
+    "ansible_mounts": [
+        {
+            "block_available": 7704613,
+            "block_size": 4096,
+            "block_total": 11527681,
+            "block_used": 3823068,
+            "device": "/dev/mapper/rhel-root",
+            "fstype": "xfs",
+            "inode_available": 22927125,
+            "inode_total": 23066624,
+            "inode_used": 139499,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 31558094848,
+            "size_total": 47217381376,
+            "uuid": "9401a7b6-2792-410d-9d3f-8a5a7ef17cae"
+        },
+        {
+            "block_available": 184595,
+            "block_size": 4096,
+            "block_total": 259584,
+            "block_used": 74989,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523868,
+            "inode_total": 524288,
+            "inode_used": 420,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 756101120,
+            "size_total": 1063256064,
+            "uuid": "c6f15a58-9fba-406a-9cf9-b53b1e48dd33"
+        }
+    ]
+}
+ok: [192.168.206.139] => {
+    "ansible_mounts": [
+        {
+            "block_available": 7802579,
+            "block_size": 4096,
+            "block_total": 9157632,
+            "block_used": 1355053,
+            "device": "/dev/mapper/cs-root",
+            "fstype": "xfs",
+            "inode_available": 18214228,
+            "inode_total": 18348032,
+            "inode_used": 133804,
+            "mount": "/",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 31959363584,
+            "size_total": 37509660672,
+            "uuid": "63653125-aaeb-4840-b88f-60434272ad35"
+        },
+        {
+            "block_available": 151623,
+            "block_size": 4096,
+            "block_total": 245760,
+            "block_used": 94137,
+            "device": "/dev/nvme0n1p1",
+            "fstype": "xfs",
+            "inode_available": 523928,
+            "inode_total": 524288,
+            "inode_used": 360,
+            "mount": "/boot",
+            "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 621047808,
+            "size_total": 1006632960,
+            "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+        }
+    ]
+}
+
+TASK [Show Disk Info] *****************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "b1390254-4686-4631-be60-e7bdf91690bc"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "35643392",
+            "sectorsize": "512",
+            "size": "17.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "63e44f73-8070-4879-b8a0-cfde1f67b8d3"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "4194304",
+            "sectorsize": "512",
+            "size": "2.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.5a75ec57f458697c000c296da334673e"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                            "nvme-eui.5a75ec57f458697c000c296da334673e-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "cs-swap",
+                        "cs-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                            "nvme-eui.5a75ec57f458697c000c296da334673e-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "39843840",
+                    "sectorsize": 512,
+                    "size": "19.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "41943040",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "20.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ],
+                "labels": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2025-06-17-03-58-54-00"
+                ]
+            },
+            "model": "VMware IDE CDR10",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "2698496",
+            "sectorsize": "2048",
+            "size": "1.29 GB",
+            "support_discard": "2048",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+ok: [192.168.206.143] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7C9ICx4DqidWaAr2q4Oms7yrPWmXu093J1"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "b1390254-4686-4631-be60-e7bdf91690bc"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "35643392",
+            "sectorsize": "512",
+            "size": "17.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-d8ksDcMZRHzFUcxcaWMBhpmMW3lYFp7ClZDIZvGANvQDHHCPAK9ksVdj7oUDO98n"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "63e44f73-8070-4879-b8a0-cfde1f67b8d3"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "4194304",
+            "sectorsize": "512",
+            "size": "2.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.36bd8e366902ee94000c296637636e3b"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                            "nvme-eui.36bd8e366902ee94000c296637636e3b-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "c7afb783-2c7d-4a67-a9ae-e0d8a4329ebd"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "cs-swap",
+                        "cs-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-TDtcL9-MUo3-wHjE-PpHM-mfA2-WyPi-rHVVN4",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                            "nvme-eui.36bd8e366902ee94000c296637636e3b-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "39843840",
+                    "sectorsize": 512,
+                    "size": "19.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "41943040",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "20.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ],
+                "labels": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2025-06-17-03-58-54-00"
+                ]
+            },
+            "model": "VMware IDE CDR10",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "2698496",
+            "sectorsize": "2048",
+            "size": "1.29 GB",
+            "support_discard": "2048",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+ok: [192.168.206.137] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "63653125-aaeb-4840-b88f-60434272ad35"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "73392128",
+            "sectorsize": "512",
+            "size": "35.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "4d7546be-5606-4813-a054-6651903823ba"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "8388608",
+            "sectorsize": "512",
+            "size": "4.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.72214bade6d96f06000c296e2ea13fc2"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                            "nvme-eui.72214bade6d96f06000c296e2ea13fc2-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "ceba9007-4504-4f35-9d52-497a9cca048f"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "cs-swap",
+                        "cs-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                            "nvme-eui.72214bade6d96f06000c296e2ea13fc2-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "81786880",
+                    "sectorsize": 512,
+                    "size": "39.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "83886080",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "40.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ],
+                "labels": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2025-06-11-03-59-56-00"
+                ]
+            },
+            "model": "VMware IDE CDR10",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "25794816",
+            "sectorsize": "2048",
+            "size": "12.30 GB",
+            "support_discard": "2048",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+ok: [192.168.206.140] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "63653125-aaeb-4840-b88f-60434272ad35"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "73392128",
+            "sectorsize": "512",
+            "size": "35.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "4d7546be-5606-4813-a054-6651903823ba"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "8388608",
+            "sectorsize": "512",
+            "size": "4.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.da9ea8bdb15a25f9000c296dde585001"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                            "nvme-eui.da9ea8bdb15a25f9000c296dde585001-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "ceba9007-4504-4f35-9d52-497a9cca048f"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "cs-swap",
+                        "cs-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                            "nvme-eui.da9ea8bdb15a25f9000c296dde585001-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "81786880",
+                    "sectorsize": 512,
+                    "size": "39.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "83886080",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "40.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ],
+                "labels": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2025-06-11-03-59-56-00"
+                ]
+            },
+            "model": "VMware IDE CDR10",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "25794816",
+            "sectorsize": "2048",
+            "size": "12.30 GB",
+            "support_discard": "2048",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+ok: [192.168.206.131] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-root",
+                    "dm-uuid-LVM-6el7KmuBxZUDqwcf3rpXVfOtxn6aCdLet0rv2itbUDHgcMpFhp8vXThdXLn1OEL3"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "9401a7b6-2792-410d-9d3f-8a5a7ef17cae"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "92266496",
+            "sectorsize": "512",
+            "size": "44.00 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-swap",
+                    "dm-uuid-LVM-6el7KmuBxZUDqwcf3rpXVfOtxn6aCdLe4K6I0v9QkgJcCFbNxk3qjMYscS5NQnCy"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "3cb65376-c6f1-408d-a961-7e81ff4cdf66"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-eui.44b3cda380a27764000c296551536247"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-eui.44b3cda380a27764000c296551536247-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "c6f15a58-9fba-406a-9cf9-b53b1e48dd33"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "c6f15a58-9fba-406a-9cf9-b53b1e48dd33"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "rhel-swap",
+                        "rhel-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-jaC3Gs-LSlU-3xxX-3pXV-dYdN-2Zq0-1IWkEO",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-eui.44b3cda380a27764000c296551536247-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "102758400",
+                    "sectorsize": 512,
+                    "size": "49.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "104857600",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "50.00 GB",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "SATA controller: VMware SATA AHCI controller",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_SATA_CDRW_Drive_01000000000000000001"
+                ],
+                "labels": [
+                    "RHEL-9-2-0-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2023-04-13-16-58-02-00"
+                ]
+            },
+            "model": "VMware SATA CD01",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "18742144",
+            "sectorsize": "2048",
+            "size": "8.94 GB",
+            "support_discard": "0",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+ok: [192.168.206.139] => {
+    "ansible_devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-root",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrsixUPhae6l2Nyj1YeJtLxHve3m2163l8"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "63653125-aaeb-4840-b88f-60434272ad35"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "73392128",
+            "sectorsize": "512",
+            "size": "35.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-cs-swap",
+                    "dm-uuid-LVM-4wneF7xTuPqmQF8no5wpu15c6aMlSaNrYxtxXkWyKr2uUf6P5K1Sgy4ESr3H8zfy"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "4d7546be-5606-4813-a054-6651903823ba"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "8388608",
+            "sectorsize": "512",
+            "size": "4.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "nvme0n1": {
+            "holders": [],
+            "host": "Non-Volatile memory controller: VMware NVMe SSD Controller",
+            "links": {
+                "ids": [
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000",
+                    "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1",
+                    "nvme-eui.92694430b6ebd7c6000c2967a54c70e3"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "VMware Virtual NVMe Disk",
+            "partitions": {
+                "nvme0n1p1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part1",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part1",
+                            "nvme-eui.92694430b6ebd7c6000c2967a54c70e3-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "ceba9007-4504-4f35-9d52-497a9cca048f"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "2048",
+                    "uuid": "ceba9007-4504-4f35-9d52-497a9cca048f"
+                },
+                "nvme0n1p2": {
+                    "holders": [
+                        "cs-swap",
+                        "cs-root"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-Jx2zCv-OesX-PbDF-n5sc-rE4U-RV0c-1S0dvC",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000-part2",
+                            "nvme-VMware_Virtual_NVMe_Disk_VMware_NVME_0000_1-part2",
+                            "nvme-eui.92694430b6ebd7c6000c2967a54c70e3-part2"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "81786880",
+                    "sectorsize": 512,
+                    "size": "39.00 GB",
+                    "start": "2099200",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "83886080",
+            "sectorsize": "512",
+            "serial": "VMware",
+            "size": "40.00 GB",
+            "support_discard": "512",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+            "links": {
+                "ids": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ],
+                "labels": [
+                    "CentOS-Stream-9-BaseOS-x86_64"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2025-06-11-03-59-56-00"
+                ]
+            },
+            "model": "VMware IDE CDR10",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "0",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "25794816",
+            "sectorsize": "2048",
+            "size": "12.30 GB",
+            "support_discard": "2048",
+            "vendor": "NECVMWar",
+            "virtual": 1
+        }
+    }
+}
+
+PLAY RECAP ****************************************************************************************************************************************************************************************
+192.168.206.131            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.137            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.139            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.140            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.142            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.143            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[root@control-node plybook]# [root@control-node plybook]# ansible-playbook Single_task.yml viansible-playbookviansible-playbookvi memory c_check
+"memory_check" [New]  zz           ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  0,0-1All-- INSERT --0,1All- name: Check Memory Information
+  hosts: all  gather_facts: true
+  become: yes4,13All~@k   2~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   3,20~@k   19~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   2,12~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   1,32~@k   1~@k   0~@k   29~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   0~@k   19~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   ~@k   ~@k   ~@k   ~@k   ~@k   i -- INSERT --1,1All23423211- name: Check Memory Information2,1All1-2-3-42321^[  2,1All::q![root@control-node plybook]# vi memory_check.yml
+"memory_check.yml" [New]  zz           ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  0,0-1All- - - i -- INSERT --0,1All-1,2-3---42,1-2- 3name: Check Memory Information3
+  3,3 h4o5s6t7  host:89a10l1l2
+    4,5 3gather_facts: true21
+    5,5 3b4r54e5c6o7m8e9  become:101y2e3s4
+    6,5 
+    7t6a7s8k9s10  tasks:9 
+    8,5-6- 7n8m9a10e1nmae:23S4h5o6w78T9o20t1a2l34M5e6m7o8r9y30
+      9,7 d8e9b10o10u1g2debug:3
+        10,9m10s1g2msg:34"5"65T"6o"7t"8a"9l"20 "1M"2e"3m"4o"5r"6t"7"6y"7:"8 "9{"30{"1}"{}2}"{{}}32{{}}1ansible_memtotal_mb}}"a}50{{}}12M"{}3B"43{}2 MB"{}3456
+          1,11
+          2
+          39 7 tasks:
+    - nmae: Show Total Memory      debug:        msg: "Total Memory: {{ansible_memtotal_mb}} MB"7,165432345678tasks:7task:5task:344565- nmae: Show Total Memory3 - nmae: Show Total Memory456789109 e: Show Total Memory8e: Show Total Memory7ae: Show Total Memory8me: Show Total Memory9e: Show Total Memory103,9 2,110,109,10 8e: Show Total Memory9 e: Show Total Memory8ae: Show Total Memory9me: Show Total Memory10910,101,1 23,94,101: Show Total Memory01234567892012 Memory1 Memory0 Memory19 Memory8 Memory7F Memory8r Memory9e Memory20e Memory1  Memory2Memory15,136,2101920 Memory: {{ansible_memtotal_mb}} MB"19 Memory: {{ansible_memtotal_mb}} MB"8 Memory: {{ansible_memtotal_mb}} MB"7 Memory: {{ansible_memtotal_mb}} MB"6 Memory: {{ansible_memtotal_mb}} MB"5F Memory: {{ansible_memtotal_mb}} MB"6r Memory: {{ansible_memtotal_mb}} MB"7e Memory: {{ansible_memtotal_mb}} MB"8e Memory: {{ansible_memtotal_mb}} MB"9 Memory: {{ansible_memtotal_mb}} MB"8e Memory: {{ansible_memtotal_mb}} MB"9201234567{}8{{}}930{}1234567894012345678{}9} MB"}}8} MB"}}7} MB"}}6} MB"}}5} MB"}}4} MB"}}3} MB"}}2} MB"}}1} MB"}}0} MB"}}39} MB"}}8} MB"}}7} MB"}}6} MB"}}5} MB"}}4} MB"}}3} MB"}}2} MB"}}1} MB"}}0ansible_memfree_mb}} MB"a}48{{}}950{}1234^[  16,53All::wq!"memory_check.yml" [New] 17L, 300B written
+[root@control-node plybook]# vi memory_check.ymlansible-playbook Single_task.yml viansible-playbook--syntax-check Single_task.ymlmemory_check.yml 
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/etc/ansible/plybook/memory_check.yml': line 15, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Show Free Memory
+      debug:
+           ^ here
+[root@control-node plybook]# ansible-playbook --syntax-check memory_check.yml vi memory_check.yml
+"memory_check.yml" 17L, 300B  zz           ---
+- name: Check Memory Information  host: allgather_facts: true
+  become: yes
+
+  tasks:
+    - name: Show Total Memorydebug:msg: "Total Memory: {{ansible_memtotal_mb}} MB"tasks:
+   - name: Show Free Memorydebug:msg: "Free Memory: {{ansible_memfree_mb}} MB"
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  16,53All~@k   5,12~@k   4,27~@k   3,8 ~@k   2,0-1~@k   1~@k   0,53 ~@k   9,12 ~@k   8,29~@k   7,8 ~@k   6,0-1~@k   5,13 ~@k   4,20~@k   3,11i -- INSERT --3,11All09 87s: all8^[  3,7All::wq!"memory_check.yml" 17L, 301B written
+[root@control-node plybook]# vi memory_check.ymlansible-playbook --syntax-check memory_check.yml 
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/etc/ansible/plybook/memory_check.yml': line 15, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+   - name: Show Free Memory
+      debug:
+           ^ here
+[root@control-node plybook]# ansible-playbook --syntax-check memory_check.yml ansible-playbook --syntax-check memory_check.yml vi memory_check.yml
+"memory_check.yml" 17L, 301B  zz           ---
+- name: Check Memory Information  hosts: allgather_facts: true
+  become: yes
+
+  tasks:
+    - name: Show Total Memorydebug:msg: "Total Memory: {{ansible_memtotal_mb}} MB"tasks:
+   - name: Show Free Memorydebug:msg: "Free Memory: {{ansible_memfree_mb}} MB"
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  3,7All~@k   2~@k   6~@k   5~@k   4~@k   3~@k   2~@k   1~@k   1~@k   2~@k   3~@k   4~@k   5~@k   6,0-1~@k   7,1  ~@k   8~@k   9~@k   10,1~@k   1,0-1~@k   2~@k   3,1  ~@k   2,0-1~@k   1~@k   ~@k   2i -- INSERT --12,1All
+~                                                                                                                                                                                                  11,1All223456734debug:5 debug:65789msg: "Free Memory: {{ansible_memfree_mb}} MB"74321,12,7346545  msg: "Free Memory: {{ansible_memfree_mb}} MB"74321,10,79,7 876,15,74321,4^[  1,3All::wq!"memory_check.yml" 16L, 298B written
+[root@control-node plybook]# vi memory_check.ymlansible-playbook --syntax-check memory_check.yml 
+[WARNING]: While constructing a mapping from /etc/ansible/plybook/memory_check.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined value only.
+
+playbook: memory_check.yml
+[root@control-node plybook]# ansible-playbook --syntax-check memory_check.yml vi memory_check.yml
+"memory_check.yml" 16L, 298B  zz           ---
+- name: Check Memory Information  hosts: allgather_facts: true
+  become: yes
+
+  tasks:
+    - name: Show Total Memorydebug:msg: "Total Memory: {{ansible_memtotal_mb}} MB"
+
+  tasks:
+   - name: Show Free Memorydebug:msg: "Free Memory: {{ansible_memfree_mb}} MB"
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  1,3All~@k   ~@k   ~@k   2~@k   3~@k   4~@k   5~@k   6,0-1~@k   7,3  ~@k   8~@k   9~@k   10,3~@k   1,0-1~@k   2,3  0 10 0 0 0 ~@k   2i -- INSERT --12,2All3456789  tasks8765431
+~                                                                                                                                                                                                  11,1All^[  11,0-1All::wq!"memory_check.yml" 15L, 289B written
+[root@control-node plybook]# [root@control-node plybook]# vi memory_check.ymlansible-playbook --syntax-check memory_check.yml 
+ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/etc/ansible/plybook/memory_check.yml': line 12, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: Show Free Memory
+   ^ here
+[root@control-node plybook]# ansible-playbook --syntax-check memory_check.yml vi memory_check.yml
+"memory_check.yml" 15L, 289B  zz           ---
+- name: Check Memory Information  hosts: allgather_facts: true
+  become: yes
+
+  tasks:
+    - name: Show Total Memorydebug:msg: "Total Memory: {{ansible_memtotal_mb}} MB"- name: Show Free Memorydebug:msg: "Free Memory: {{ansible_memfree_mb}} MB"
+
+~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  ~                                                                                                                                                                                                  11,0-1All~@k   2,1  ~@k   2~@k   3~@k   4~@k   5~@k   6~@k   7~@k   8~@k   9~@k   10~@k   1~@k   2~@k   3~@k   2~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   7~@k   8~@k   9~@k   8~@k   7~@k   6~@k   5~@k   4~@k   5~@k   6~@k   7~@k   8~@k   9~@k   10~@k   1~@k   0~@k   9 ~@k   8~@k   7~@k   6~@k   5~@k   6i -- INSERT --12,6All-name: Show Free Memory5- name: Show Free Memory6 name: Show Free Memory78932876567-name: Show Free Memory5- name: Show Free Memory654343  - name: Show Free Memory4356 debug:784 msg: "Free Memory: {{ansible_memfree_mb}} MB"9^[  14,8All::wq!"memory_check.yml" 15L, 292B written
+[root@control-node plybook]# vi memory_check.ymlansible-playbook --syntax-check memory_check.yml 
+
+playbook: memory_check.yml
+[root@control-node plybook]# [root@control-node plybook]# ansible-playbook --syntax-check memory_check.yml vi memory_check.ymlansible-playbook --syntax-check memory_check.yml memory_check.yml 
+
+PLAY [Check Memory Information] *******************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ****************************************************************************************************************************************************************************
+ok: [192.168.206.131]
+ok: [192.168.206.142]
+ok: [192.168.206.140]
+ok: [192.168.206.143]
+ok: [192.168.206.137]
+ok: [192.168.206.139]
+
+TASK [Show Total Memory] **************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "Total Memory: 3350 MB"
+}
+ok: [192.168.206.143] => {
+    "msg": "Total Memory: 3350 MB"
+}
+ok: [192.168.206.137] => {
+    "msg": "Total Memory: 8210 MB"
+}
+ok: [192.168.206.140] => {
+    "msg": "Total Memory: 8210 MB"
+}
+ok: [192.168.206.131] => {
+    "msg": "Total Memory: 31816 MB"
+}
+ok: [192.168.206.139] => {
+    "msg": "Total Memory: 8210 MB"
+}
+
+TASK [Show Free Memory] ***************************************************************************************************************************************************************************
+ok: [192.168.206.142] => {
+    "msg": "Free Memory: 2232 MB"
+}
+ok: [192.168.206.143] => {
+    "msg": "Free Memory: 2178 MB"
+}
+ok: [192.168.206.137] => {
+    "msg": "Free Memory: 7086 MB"
+}
+ok: [192.168.206.140] => {
+    "msg": "Free Memory: 7046 MB"
+}
+ok: [192.168.206.131] => {
+    "msg": "Free Memory: 30412 MB"
+}
+ok: [192.168.206.139] => {
+    "msg": "Free Memory: 7100 MB"
+}
+
+PLAY RECAP ****************************************************************************************************************************************************************************************
+192.168.206.131            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.137            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.139            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.140            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.142            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+192.168.206.143            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[root@control-node plybook]# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens160: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:0c:29:80:b5:e6 brd ff:ff:ff:ff:ff:ff
+    altname enp3s0
+    inet 192.168.206.141/24 brd 192.168.206.255 scope global dynamic noprefixroute ens160
+       valid_lft 996sec preferred_lft 996sec
+    inet6 fe80::20c:29ff:fe80:b5e6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+[root@control-node plybook]# 

@@ -1,0 +1,16 @@
+---
+- name: Single-Task
+  hosts: all
+  become: yes
+  gather_facts: yes
+  
+  tasks:
+    - name: Show Disk Info
+      debug:
+        var: ansible_mounts
+
+    - name: Show Disk Info
+      debug:
+        var: ansible_devices
+
+

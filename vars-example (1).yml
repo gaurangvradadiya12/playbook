@@ -1,0 +1,10 @@
+---
+- name: vars example
+  hosts: all
+  vars:
+   http_port: 80
+
+  tasks:
+    - name: just show the variable
+      debug:
+        msg: "The HTTP port is {{ http_port }}"

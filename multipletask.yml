@@ -1,0 +1,18 @@
+---
+- name: MultiTask Opration
+  hosts: all
+  become: yes
+  gather_facts: yes
+  
+  tasks:
+    - name: Show Os Information
+      debug:
+        msg: "Server Running On {{ ansible_distribution }} {{ ansible_distribution_version }}"
+
+    - name: Show IP Address
+      debug:
+        msg: "The primary IP address is {{ ansible_default_ipv4.address }}"
+
+    - name: Total RAM
+      debug:
+        msg: "Total RAM In System {{ ansible_memtotal_mb }} MB"

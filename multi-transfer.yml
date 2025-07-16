@@ -1,0 +1,25 @@
+---
+- name: multiple file copy to remote server
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: copy file1.txt
+      copy:
+        src: /home/ssl/file1.txt
+        dest: /root/file1.txt
+
+    - name: copy file2.txt
+      copy:
+        src: /home/ssl/file2.txt
+        dest: /root/file2.txt
+
+    - name: copy file3.txt
+      copy:
+        src: /home/ssl/file3.txt
+        dest: /root/file3.txt
+
+    - name: copy file4.txt
+      copy:
+        src: /home/ssl/file4.txt
+        dest: /root/file4.txt

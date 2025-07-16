@@ -1,0 +1,14 @@
+---
+- name: File Rename Example
+  hosts: localhost
+  tasks:
+    - name: Rename a file
+      ansible.builtin.command: mv /path/to/old_filename.txt /path/to/new_filename.txt
+      register: rename_result
+
+    - name: Display rename result
+      ansible.builtin.debug:
+        var: rename_result.stdout
+
+    - name: Check if the file exists after renaming
+      ansible.builtin.stat:

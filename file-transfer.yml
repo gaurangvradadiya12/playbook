@@ -1,0 +1,15 @@
+---
+- name: copy file to Remote server
+  hosts: all
+  become: yes
+
+  tasks:
+   - name: copy a file to remote 
+     copy:
+       src: /root/file-contole
+       dest: /tmp/file-contole
+       owner: root
+       group: root
+       mode: '0777'
+
+
